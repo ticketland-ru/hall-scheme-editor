@@ -1,0 +1,474 @@
+<!--
+  ~ Copyright (c) 2019 ООО «МДТЗК» (ticketland.ru)
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense copies of the Software,  and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header__logo"></div>
+            <span class="header__title">Seat Plan Maker v 1.0</span>
+            <a href="manual" class="btn" target="_blank">Инструкция</a>
+        </header>
+
+        <div class="seat-plan-maker">
+
+            <div class="sidebar">
+                <div class="sidebar__header">
+                    <div class="sidebar__title">Библиотека Элементов</div>
+                </div>
+
+                <div class="elements-block">
+
+
+                    <div class="elements-block__title">Сцена и места в зале</div>
+                    <div class="elements-block__items">
+
+                        <div class="element element--library">
+                            <div id="stage" class="element__cell">
+                                <img src="./images/library-elements/stage.svg" alt="Сцена">
+                            </div>
+                            <span class="element__description">Сцена</span>
+                        </div>
+                        <div class="element element--library">
+                            <div id="arena" class="element__cell">
+                                <img src="./images/library-elements/arena.svg" alt="Арена">
+                            </div>
+                            <span class="element__description">Арена</span>
+                        </div>
+                        <div class="element element--library">
+                            <div class="element__cell">
+                                <img src="./images/library-elements/place.svg" alt="Место в зале">
+                            </div>
+                            <span class="element__description">Место в зале</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="elements-block">
+
+                    <div class="elements-block__title">Лестницы, Колонны, Выходы</div>
+
+
+                    <div class="elements-block__items">
+
+                        <div class="element element--library">
+                            <div id="straight_stairway" class="element__cell">
+                                <img src="./images/library-elements/stairs.svg" alt="Прямая лестница">
+                            </div>
+                            <span class="element__description">Прямая лестница</span>
+                        </div>
+
+                        <div class="element element--library">
+                            <div id="pillar_rectangle" class="element__cell">
+                                <img src="./images/library-elements/pillar-rectangle.svg" alt="Прямоугольная колонна">
+                            </div>
+                            <span class="element__description">Прямоугольная колонна</span>
+                        </div>
+
+                        <div class="element element--library">
+                            <div id="pillar_circle" class="element__cell">
+                                <img src="./images/library-elements/pillar-circle.svg" alt="Круглая колонна">
+                            </div>
+                            <span class="element__description">Круглая колонна</span>
+                        </div>
+
+                    </div>
+
+                    <div class="elements-block__items">
+
+                        <div class="element element--library">
+                            <div id="exit" class="element__cell">
+                                <img src="./images/library-elements/exit.svg" alt="Выходы">
+                            </div>
+                            <span class="element__description">Выходы</span>
+                        </div>
+
+                        <div class="element element--library">
+                            <div id="stairway_curved" class="element__cell">
+                                <img src="./images/library-elements/stairs-45.svg" alt="Лестница 45 градусов">
+                            </div>
+                            <span class="element__description">Лестница, 45</span>
+                        </div>
+
+                        <div class="element element--library">
+                            <div class="element__cell">
+                                <img src="./images/library-elements/wall.svg" alt="Стена">
+                            </div>
+                            <span class="element__description">Стена</span>
+                        </div>
+
+                    </div>
+                    <div class="elements-block__items">
+                        <div class="element element--library">
+                            <div id="artists_passage" class="element__cell">
+                                <img src="./images/library-elements/artists.svg" alt="Выход артистов">
+                            </div>
+                            <span class="element__description">Выход артистов</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="elements-block">
+
+                    <div class="elements-block__title">Столы, Диваны</div>
+
+                    <div class="elements-block__items">
+
+                        <div class="element element--library">
+                            <div id="table_rectangle" class="element__cell">
+                                <img src="./images/library-elements/table-rectangle.svg" alt="Стол прямоугольный">
+                            </div>
+                            <span class="element__description">Стол прямоугольный</span>
+                        </div>
+
+                        <div class="element element--library">
+                            <div class="element__cell">
+                                <img src="./images/library-elements/table-rounded.svg" alt="Стол круглый">
+                            </div>
+                            <span class="element__description">Стол круглый</span>
+                        </div>
+
+                        <div class="element element--library">
+                            <div class="element__cell">
+                                <img src="./images/library-elements/table-oval.svg" alt="Стол овальный">
+                            </div>
+                            <span class="element__description">Стол овальный</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="elements-block__items">
+
+                        <div class="element element--library">
+                            <div id="couch" class="element__cell">
+                                <img src="./images/library-elements/couch.svg" alt="Диван прямой">
+                            </div>
+                            <span class="element__description">Диван прямой</span>
+                        </div>
+                        <div class="element element--library">
+                            <div id="couch_curved" class="element__cell">
+                                <img src="./images/library-elements/couch-curved.svg" alt="Диван угловой">
+                            </div>
+                            <span class="element__description">Диван угловой</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="workspace" class="workspace">
+
+                <div class="toolbar toolbar--left">
+
+
+                    <svg id="tool-select-mode" class="toolbar__tool" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Инструмент «Выделение»</title>
+                        <g fill="none" transform="translate(9 9)">
+                            <path d="m4.757375 9.7545-2.499-7.49525 7.497 2.498125z" fill="#fff" />
+                            <path class="icon-fill" d="m13.743625 12.506375-4.631375-4.631375 2.881375-2.881375c.2150706-.21405548.3036037-.52441201.2338358-.81972124-.069768-.29530924-.2878338-.53323062-.5759608-.62840376l-10.5-3.5c-.3142503-.10466143-.66066109-.02291081-.89496221.21120509-.23430112.2341159-.31632567.58046194-.21191279.89479491l3.5 10.5c.11997743.3568017.45394303.5975103.830375.5985.22925 0 .45325-.091.618625-.256375l2.881375-2.881375 4.631375 4.6305zm-8.98625-2.751875-2.499-7.49525 7.497 2.498125z"
+                                fill="#3d4349" />
+                        </g>
+                    </svg>
+
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="tool-rectangle-mode" class="toolbar__tool"
+                        height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Инструмент «Прямоугольник»</title>
+                        <rect class="icon-stroke" x="8" y="8" width="16" height="16" fill-opacity="0.24" stroke="#3d4349"
+                            stroke-width="2" />
+                    </svg>
+
+
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="tool-circle-mode" class="toolbar__tool" height="32"
+                        viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Инструмент «Эллипс»</title>
+                        <circle class="icon-stroke" cx="16" cy="16" fill-opacity="0.24" r="9" stroke="#3d4349"
+                            stroke-width="2" />
+                    </svg>
+
+                    <svg id="tool-text-mode" class="toolbar__tool" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Добавить текст</title>
+                        <path class="icon-fill" d="m9.60166839 8c-.87825324 0-1.60166839.72172694-1.60166839 1.59791939 0 .68308541.44114241 1.26735481 1.05109489 1.49388821v9.814304c-.60995248.2265339-1.05109489.812884-1.05109489 1.495969 0 .8761925.72341515 1.5979194 1.60166839 1.5979194.68998801 0 1.27842741-.449417 1.50156411-1.0652796h9.7935349c.223137.6158626.8115761 1.0652796 1.5015642 1.0652796.8782535 0 1.6016684-.7217269 1.6016684-1.5979194 0-.6890612-.449505-1.2780362-1.0677789-1.50013v-9.7851755c.6182739-.222093 1.0677789-.8089877 1.0677789-1.49804942 0-.8761925-.7234149-1.59791944-1.6016684-1.59791944-.6906822 0-1.2789515.44845417-1.5015642 1.06527964h-9.7872783c-.2167477-.62736691-.8095415-1.08608588-1.50782071-1.08608588zm0 1.06527961c.30118275 0 .53388951.2321244.53388951.53263978 0 .30040885-.23270676.53263981-.53388951.53263981s-.53388943-.23223096-.53388945-.53263981c0-.30051538.2327067-.53263978.53388945-.53263978zm12.79666321.02080627c.3011831 0 .5338895.23212443.5338895.5326398 0 .30051538-.2327064.53263982-.5338895.53263982s-.5338895-.23212444-.5338895-.53263982c0-.30051537.2327064-.5326398.5338895-.5326398zm-11.3013555 1.06527962h9.7997913c.1624776.4484423.5179294.8038544.9676747.9654096v9.7851755c-.4503667.1617787-.8055175.5181787-.9676747.9674902h-9.7935349c-.164158-.4548552-.5261864-.8148974-.9843587-.9737316v-9.7934985c.4507138-.1562491.8101614-.5063914.9781023-.9508452zm1.1637122 2.1388817-.0062566 2.6278284h1.067779l.004171-1.5604682h2.1438999l-.0125131 5.3750327-1.0698644-.004161-.0041709 1.0652796 3.2158498.0104025.004171-1.0652796-1.0782065-.004161.0125131-5.3771132h2.1209593l-.0020855 1.5583875h1.0677791l.0062561-2.6257477zm-2.65901991 9.5791936c.30118275 0 .53388951.2321244.53388951.5326398s-.23270676.5326398-.53388951.5326398-.53388943-.2321244-.53388945-.5326398c0-.3005154.2327067-.5326398.53388945-.5326398zm12.79666321 0c.3011831 0 .5338895.2321244.5338895.5326398s-.2327064.5326398-.5338895.5326398-.5338895-.2321244-.5338895-.5326398.2327064-.5326398.5338895-.5326398z"
+                            fill="#3d4349" />
+                    </svg>
+
+                    <svg id="tool-polygon-mode" class="toolbar__tool" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Инструмент «Полигон»</title>
+                        <g fill="none" fill-rule="nonzero">
+                            <path d="m9.60166839 8c-.87825324 0-1.60166839.72172694-1.60166839 1.59791939 0 .68308541.44114241 1.26735481 1.05109489 1.49388821v5.814304c-.60995248.2265339-1.05109489.812884-1.05109489 1.495969 0 .8761925.72341515 1.5979194 1.60166839 1.5979194.68998801 0 1.27842741-.449417 1.50156411-1.0652796h9.7935349c.223137.6158626.8115761 1.0652796 1.5015642 1.0652796.8782535 0 1.6016684-.7217269 1.6016684-1.5979194 0-.6890612-.449505-1.2780362-1.0677789-1.50013v-5.7851755c.6182739-.222093 1.0677789-.8089877 1.0677789-1.49804942 0-.8761925-.7234149-1.59791944-1.6016684-1.59791944-.6906822 0-1.2789515.44845417-1.5015642 1.06527964h-9.7872783c-.2167477-.62736691-.8095415-1.08608588-1.50782071-1.08608588zm0 1.06527961c.30118275 0 .53388951.2321244.53388951.53263978 0 .30040885-.23270676.53263981-.53388951.53263981s-.53388943-.23223096-.53388945-.53263981c0-.30051538.2327067-.53263978.53388945-.53263978zm12.79666321.02080627c.3011831 0 .5338895.23212443.5338895.5326398 0 .30051538-.2327064.53263982-.5338895.53263982s-.5338895-.23212444-.5338895-.53263982c0-.30051537.2327064-.5326398.5338895-.5326398zm-11.3013555 1.06527962h9.7997913c.1624776.4484423.5179294.8038544.9676747.9654096v5.7851755c-.4503667.1617787-.8055175.5181787-.9676747.9674902h-9.7935349c-.164158-.4548552-.5261864-.8148974-.9843587-.9737316v-5.7934985c.4507138-.1562491.8101614-.5063914.9781023-.9508452zm-1.49530771 7.7180753c.30118275 0 .53388951.2321244.53388951.5326398s-.23270676.5326398-.53388951.5326398-.53388943-.2321244-.53388945-.5326398c0-.3005154.2327067-.5326398.53388945-.5326398zm12.79666321 0c.3011831 0 .5338895.2321244.5338895.5326398s-.2327064.5326398-.5338895.5326398-.5338895-.2321244-.5338895-.5326398.2327064-.5326398.5338895-.5326398z"
+                                fill="#3d4349" />
+                            <path class="icon-stroke" d="m15.1918961 22.2120518-2.6855713 2.6416649-.0072436-8.6924278 6.3909588 5.5898331z"
+                                fill="#fff" stroke="#3d4349" transform="" />
+                        </g>
+                    </svg>
+
+                    <svg id="tool-rotate-mode" class="toolbar__tool" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <title>Инструмент «Ротация Объекта»</title>
+                        <g fill="none" transform="translate(8 8)">
+                            <path class="icon-fill" d="m14 2.69480069v-.69480069c0-.4.2666667-.66666667.6666667-.66666667s.6666666.26666667.6666666.66666667v2.66666667c0 .4-.2666666.66666666-.6666666.66666666h-2.6666667c-.4 0-.6666667-.26666666-.6666667-.66666666s.2666667-.66666667.6666667-.66666667h1.3451554c-1.2267408-1.64454811-3.2558858-2.66666667-5.3451554-2.66666667-3.66666667 0-6.66666667 3-6.66666667 6.66666667 0 3.6666667 3 6.6666667 6.66666667 6.6666667 3.6666667 0 6.6666667-3 6.6666667-6.6666667 0-.4.2666666-.66666667.6666666-.66666667s.6666667.26666667.6666667.66666667c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c2.3084526 0 4.4670284.99917876 6 2.69480069z"
+                                fill="#3d4349" />
+                            <path d="m8 10.6666667c-1.46666667 0-2.66666667-1.20000003-2.66666667-2.6666667s1.2-2.66666667 2.66666667-2.66666667 2.6666667 1.2 2.6666667 2.66666667-1.20000003 2.6666667-2.6666667 2.6666667zm0-4.00000003c-.73333333 0-1.33333333.6-1.33333333 1.33333333s.6 1.33333333 1.33333333 1.33333333 1.33333333-.6 1.33333333-1.33333333-.6-1.33333333-1.33333333-1.33333333z"
+                                fill="#3d4349" />
+                        </g>
+                    </svg>
+
+                </div>
+
+                <div class="toolbar toolbar--right toolbar--right-first">
+                    <img id="zoom-in" class="toolbar__tool" src="./images/toolbar/zoom-in.svg">
+                    <img id="zoom-out" class="toolbar__tool" src="./images/toolbar/zoom-out.svg">
+                </div>
+
+                <div class="toolbar toolbar--right toolbar--right-second">
+                    <img id="undo" class="toolbar__tool" src="./images/toolbar/undo.svg">
+                    <img id="redo" class="toolbar__tool" src="./images/toolbar/redo.svg">
+                </div>
+
+                <div class="toolbar toolbar--right toolbar--right-third">
+                    <img class="toolbar__tool" src="./images/toolbar/to-front.svg">
+                    <img class="toolbar__tool" src="./images/toolbar/to-back.svg">
+                </div>
+
+                <canvas id="canvas" />
+            </div>
+
+            <div class="sidebar">
+
+                <div class="sidebar__header">
+                    <div class="sidebar__title">Свойства</div>
+                </div>
+
+                <div class="elements-block">
+
+                    <div class="elements-block__title">Информация</div>
+
+                    <div class="elements-block__items">
+
+                        <div class="element element--input hidden">
+
+                            <input id="input-hall-name" class="element__input stop_kb_propagation" type="text" placeholder="Наименование зала"
+                                title="Наименование зала">
+                            <span class="element__input-name">Зал:</span>
+                        </div>
+
+                        <div class="element element--message hidden">
+                            <span id="span-message" class="element__message" />
+                        </div>
+
+                        <div class="element element--input hidden stop_kb_propagation">
+                            <input id="input-place-id" class="element__input" type="text" placeholder="ID Места" value="777"
+                                title="ID Места" disabled>
+                            <span class="element__input-name">ID Места:</span>
+                        </div>
+
+                        <div class="element element--input hidden stop_kb_propagation">
+                            <input id="input-seat-section-name" class="element__input" type="text" placeholder="Секция"
+                                title="Секция" disabled>
+                            <span class="element__input-name">Секция:</span>
+                        </div>
+
+                        <div class="element element--input element--input-half hidden stop_kb_propagation">
+                            <input id="input-row-number" class="element__input" type="text" placeholder="Ряд" title="Ряд"
+                                disabled>
+                            <span class="element__input-name">Ряд:</span>
+                        </div>
+
+                        <div class="element element--input element--input-half hidden stop_kb_propagation">
+                            <input id="input-place-number" class="element__input" type="text" placeholder="Место" title="Место"
+                                disabled>
+                            <span class="element__input-name">Место:</span>
+                        </div>
+
+                        <div class="element element--input hidden stop_kb_propagation">
+                            <input id="input-sector-name" class="element__input" type="text" placeholder="Название сектора"
+                                title="Название сектора">
+                            <span class="element__input-name">Название:</span>
+                        </div>
+
+                        <div class="element element--input hidden">
+                            <input id="checkbox-free-placing" type="checkbox" name="checkbox-free-placing" value="free-placing">
+                            <label for="checkbox-free-placing" class="element__checkbox">Свободная рассадка</label>
+                        </div>
+
+                        <div class="element element--input hidden">
+                            <input id="checkbox-hidden" type="checkbox" name="checkbox-hidden" value="hidden">
+                            <label for="checkbox-hidden" class="element__checkbox">Скрытый</label>
+                        </div>
+
+                        <div class="element element--input hidden">
+                            <input id="section-save" type="button" name="section-save" value="Сохранить изменения">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="elements-block hidden">
+
+                    <div class="elements-block__title">Координаты и размер</div>
+
+                    <div id="coordinates" class="elements-block__items">
+
+                        <div class="element element--input element--input-third">
+
+                            <input id="input-coordinate-x" class="element__input stop_kb_propagation" type="number" title="Координата места X">
+                            <span class="element__input-name">X:</span>
+
+                        </div>
+
+                        <div class="element element--input element--input-third">
+
+                            <input id="input-coordinate-y" class="element__input stop_kb_propagation" type="number" title="Координата места Y">
+                            <span class="element__input-name">Y:</span>
+
+                        </div>
+
+                        <div class="element element--input element--input-third">
+
+                            <input id="input-coordinate-z" class="element__input stop_kb_propagation" type="number" title="Координата места Z"
+                                   disabled>
+                            <span class="element__input-name">Z:</span>
+
+                        </div>
+
+                        <div class="element element--input element--input-half">
+
+                            <input id="input-width" class="element__input stop_kb_propagation" type="number" title="Ширина 16px"
+                                   value="16" disabled>
+                            <span class="element__input-name">Ширина:</span>
+
+                        </div>
+
+                        <div class="element element--input element--input-half">
+
+                            <input id="input-height" class="element__input stop_kb_propagation" type="number" title="Высота 16px"
+                                   value="16" disabled>
+                            <span class="element__input-name">Высота:</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="elements-block hidden">
+
+                    <div class="elements-block__title">Шрифт</div>
+                    <div id="font-attributes" class="elements-block__items">
+
+                        <div class="element element--input element--input-third">
+
+                            <input id="input-font-size" class="element__input stop_kb_propagation" type="number" title="Размер шрифта">
+                            <span class="element__input-name">px:</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="elements-block hidden">
+
+                    <div class="elements-block__title">Секторы</div>
+
+                    <div id="sectors" class="elements-block__items elements-block__items--sector">
+
+                    </div>
+
+                    <div class="element">
+                        <label for="button-add-sector" style="display: inline-block; height: 32px;">
+                            <button id="button-add-sector" class="element__add-sector" type="button"/>
+                            <span class="element__add-sector-text">Добавить сектор</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="elements-block hidden">
+
+                    <div class="elements-block__title">Цвет</div>
+
+                    <div id="palette-section" class="elements-block__items">
+
+                        <div class="element">
+                            <ul class="element__color-collection">
+                                <li class="element__color element__color--empty element__color--empty-line" />
+                                <!-- <li class="element__color element__color--empty" /> -->
+                                <li class="element__color element__color--empty" style="background-color: rgba(226, 230, 234, .32);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(202, 206, 210, .32);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(148, 157, 165, .32);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(220, 53, 69, .16);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(240, 157, 26, .32);" />
+                            </ul>
+                        </div>
+                        <div class="element">
+                            <ul class="element__color-collection">
+
+                                <li class="element__color element__color--empty" style="background-color: rgba(255, 193, 8, .32);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(40, 167, 69, .16);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(22, 162, 184, .16);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(5, 123, 255, .16);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(51, 122, 183, .16);" />
+                                <li class="element__color element__color--empty" style="background-color: rgba(100, 5, 255, .16);" />
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="elements-block hidden">
+
+                    <div class="elements-block__title">Цвет</div>
+
+                    <div id="palette-text" class="elements-block__items">
+                        <!--#FFFFFF, #E2E6EA, #949DA5, #3D4349, #222222-->
+                        <div class="element">
+                            <ul class="element__color-collection">
+                                <li class="element__color element__color--empty" style="background-color: #FFFFFF;" />
+                                <li class="element__color element__color--empty" style="background-color: #E2E6EA;" />
+                                <li class="element__color element__color--empty" style="background-color: #949DA5;" />
+                                <li class="element__color element__color--empty" style="background-color: #3D4349;" />
+                                <li class="element__color element__color--empty" style="background-color: #222222;" />
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div style="border: 2px solid black; margin-top: 30px; margin-bottom: 10px"></div>
+
+                <span style="display:block;"></span>
+                <button id="add_cpoint">Add control point</button>
+                </span>
+
+            </div>
+
+        </div>
+
+        <footer class="footer" />
+
+    </div>
+
+</body>
+
+</html>

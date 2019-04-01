@@ -1,0 +1,29 @@
+<svg height="80" width="80" shape-rendering="geometricPrecision" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs></defs>
+
+  <g class="object" id="entrance" transform="translate(16, 16)" fill-rule="nonzero" stroke="#3D4349" stroke-linecap="round" stroke-width="2" fill="none">
+
+    <g>
+
+    	<!-- arrow -->
+
+      <line x1="25" y1="16" x2="25" y2="32" stroke-width="2"/>
+
+      <line x1="25" y1="32" x2="21" y2="28" stroke-width="2"/>
+
+      <line x1="25" y1="32" x2="29" y2="28" stroke-width="2"/>
+
+    </g>
+
+    <g>
+
+    	<!-- arc -->
+
+      <path d="M3 42 L7 32 L7 6 L42 6 L42 32 L46 42" stroke-width="3"></path>
+
+  	</g>    
+
+	</g>
+
+</svg>

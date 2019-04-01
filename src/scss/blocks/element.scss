@@ -1,0 +1,191 @@
+/*!
+ * Copyright (c) 2019 ООО «МДТЗК» (ticketland.ru)
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense copies of the Software,  and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+.element {
+    padding: 0 8px;
+}
+
+.element--library {
+    margin-bottom: 22px;
+    max-width: 80px;
+    text-align: center;
+}
+
+.element--input {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.element--input-half {
+    width: 50%;
+}
+.element--input-third {
+    width: 33.33%;
+}
+
+.element--message {
+    margin-bottom: 16px;
+}
+
+.element__checkbox {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.element--sector {}
+
+.element__color-collection {
+    display: flex;
+    margin: 0 0 16px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.element__color {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.element__color:hover {
+    border: 2px solid $highlightColor;
+}
+
+.element__color--empty {
+    border: 1px solid #949DA5;
+    box-sizing: border-box;
+}
+
+.element__color--empty-line::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    border-bottom: 2px solid #DC3545;
+    transform: rotate(-45deg);
+}
+
+// линии убраны с цветов
+// .element__color--lines {
+//     background-image: linear-gradient(45deg, transparent 46%, #949DA5, #949DA5, transparent 55%);
+//     background-size: 6px 6px;
+// }
+.element__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #FFF;
+    min-width: 80px;
+    min-height: 80px;
+    border: 1px solid $borderColor;
+    cursor: pointer;
+}
+
+.element__input {
+    min-width: 0; // снимает default size для inputs;
+    height: 32px;
+    margin-bottom: 16px;
+    border: 1px solid $borderColor;
+    border-left: initial; // убираем левую рамку
+    border-radius: 0 2px 2px 0; // рамка верхнего и нижнего левого угла скрыта, чтобы склеить визуально имя инпута (span) и сам инпут добившись эффекта статического текста в инпуте
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding-left: 4px;
+    flex-grow: 1;
+}
+
+.element__input-name {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 12px;
+    border: 1px solid $borderColor;
+    border-right: initial; // убираем правую рамку
+    border-radius: 2px 0 0 2px; // рамка верхнего и нижнего правого угла скрыта, чтобы склеить визуально имя инпута (span) и сам инпут добившись эффекта статического текста в инпуте
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 1.2em;
+    color: #949DA5;
+    order: -1; // нужно переместить span перед input элементом, чтобы не использовать javascript стилизуя бэкграунд цвет;
+}
+
+.element__input:focus {
+    outline: none;
+    color: #3D4349;
+}
+
+.element__input:disabled {
+    background-color: $backgroundColor;
+    cursor: not-allowed;
+}
+
+.element__input:disabled+.element__input-name {
+    background-color: $backgroundColor; // таргетинг для span элемента который содержит описание инпута, при disabled меняем бэкгроунд
+}
+
+.element__input[value] {
+    color: #3D4349; // цвет текста когда заполнен value в инпуте
+}
+
+.element__input::placeholder {
+    color: #949DA5; // цвет плейсхолдера в инпуте
+    font-style: italic;
+}
+
+.element__message {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.element__sector {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-image: linear-gradient(45deg, transparent 46%, #949DA5, #949DA5, transparent 55%);
+    background-size: 10px 10px;
+    font-weight: bold;
+}
+
+.element__add-sector {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    background: url('../images/info-bar/add-button.svg') #E2E6EA no-repeat center; // Важно! Пути в SASS файлах прописываются относительно Entry Point файла в данном проекте style.css: webpack.js.org/loaders/sass-loader/#problems-with-url-
+    cursor: pointer;
+}
+
+.element__add-sector:focus {}
+
+.element__add-sector-text {
+    height: 32px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    height: 32px;
+}
+
+// EXTRA CSS RULES//
+.hidden {
+    display: none;
+}
+
+// EXTRA CLASSES//

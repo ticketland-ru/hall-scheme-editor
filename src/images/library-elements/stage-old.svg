@@ -1,0 +1,13 @@
+<svg height="24" viewBox="0 0 46 24" width="46" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="nonzero">
+        <g stroke="#057bff" transform="translate(15 2)">
+            <circle cx="8" cy="8" r="4"/>
+            <g stroke-linecap="square">
+                <path d="m8 0v16"/>
+                <path d="m15.9999643 8.03379094-15.9999643-.03379094"/>
+            </g>
+        </g>
+        <path d="m2 2h41v20h-41z" stroke="#3d4349" stroke-width="5"/>
+        <path d="m2 2h41v20h-41z" stroke="#fff"/>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    //"sourceMap": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "allowJs": true,
+    "target": "ES6"
+  },
+  "include": [
+    "src/ts/**/*"
+  ]
+}

@@ -1,0 +1,245 @@
+/*
+ * Copyright (c) 2019 ООО «МДТЗК» (ticketland.ru)
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense copies of the Software,  and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,700i&subset=cyrillic');
+
+/* COMMON */
+
+html, body {padding: 0; margin: 0; background: #F8F9FA;}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+ul,
+ol,
+li,
+th,
+td {
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	font-family: Roboto, sans-serif;
+	color: #3d4349;
+}
+a {
+	line-height: 1.6;
+	font-family: Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #0369D9 !important;
+	text-decoration: none;
+}
+blockquote {
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	font-family: Roboto, sans-serif;
+	color: #6C757D !important;
+	margin: 0;
+	padding: 16px;
+	border-left: 4px solid #E2E6EA;
+}
+
+/* BUTTONS */
+
+button {
+	color: white;
+	background: #057BFF;
+	padding: .8em 1.6em .9em 1.6em;
+	font-weight: bold;
+	font-size: .88em;
+	border: none;
+	border-radius: .32em;
+	margin: 0 .32em 0 0;
+	outline: none;
+	cursor: pointer;
+}
+button:hover {
+	background: #0074F8;
+}
+button.btn-primary {
+	background: #057BFF;
+}
+button.btn-primary:hover {
+	background: #0074F8;
+}
+button.btn-secondary {
+	background: #6C757D;
+}
+button.btn-secondary:hover {
+	background: #646775;
+}
+button.btn-success {
+	background: #28A745;
+}
+button.btn-success:hover {
+	background: #209F37;
+}
+button.btn-danger {
+	background: #DC3545;
+}
+button.btn-danger:hover {
+	background: #D42737;
+}
+button.btn-alert {
+	/*color: #3D4349;*/
+	background: #FFC108;
+}
+button.btn-alert:hover {
+	/*color: #3D4349;*/
+	background: #F0B900;
+}
+button.btn-info {
+	background: #16A2B8;
+}
+button.btn-info:hover {
+	background: #089AB0;
+}
+button.btn-black {
+	background: #3D4349;
+}
+button.btn-black:hover {
+	background: #353541;
+}
+
+a.btn {
+	color: white !important;
+	background: #3D4349;
+	padding: .8em 2.4em .9em 2.4em;
+	font-weight: bold;
+	font-size: .88em;
+	border: none;
+	border-radius: .24em;
+	margin: .32em .32em 0 0;
+	outline: none;
+	cursor: pointer;
+}
+
+a.btn:hover {
+	background: #353541;
+}
+
+/* SUPERSCRIPT */
+
+sup {
+	background: #057BFF;
+	color: white;
+	padding: .24em .56em .24em .48em;
+	border: none;
+	font-weight: bold;
+	font-size: .8em;
+	border-radius: .8em;
+}
+sup.sup-primary {
+	background: #057BFF;
+}
+sup.sup-primary-inverse {
+	background: #FFFFFF;
+	color: #057BFF;
+}
+sup.sup-secondary {
+	background: #6C757D;
+}
+sup.sup-secondary-inverse {
+	background: #FFFFFF;
+	color: #6C757D;
+}
+sup.sup-success {
+	background: #28A745;
+}
+sup.sup-success-inverse {
+	background: #FFFFFF;
+	color: #28A745;
+}
+sup.sup-danger {
+	background: #DC3545;
+}
+sup.sup-danger-inverse {
+	background: #FFFFFF;
+	color: #DC3545;
+}
+sup.sup-alert {
+	color: #3D4349;
+	background: #FFC108;
+}
+sup.sup-alert-inverse {
+	background: #3D4349;
+	color: #FFC108;
+}
+sup.sup-info {
+	background: #16A2B8;
+}
+sup.sup-info-inverse {
+	background: #FFFFFF;
+	color: #16A2B8;
+}
+sup.sup-black {
+	background: #3D4349;
+}
+sup.sup-black-inverse {
+	background: #FFFFFF;
+	color: #3D4349;
+}
+
+/* HRs */
+
+hr {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #E2E6EA;
+	margin-bottom: 16px;
+}
+
+/* TABLES */
+
+th, td {
+	padding: 1em !important;
+}
+th {
+	background: #EEF0F2;
+	text-align: left;
+}
+
+/* CONTAINERS */
+
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #F8F9FA;
+}
+
+.sitebody {
+	width: 888px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 1px 24px;
+	border: 1px solid #E2E6EA;
+}
+
+/* TEXT */
+
+p.str {
+	text-decoration: line-through;
+}
+
+li {
+	margin-bottom: 8px;
+}
+
+li blockquote {
+	margin: 16px 0;
+}
+
+
+
+
